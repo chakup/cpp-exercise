@@ -91,5 +91,20 @@ int main()
     delete p_number7;
     p_number7 = nullptr;
 
+    // Can reuse pointers
+
+    p_number5 = new int(81);
+    std::cout << "*p_number5 :" << *p_number5 << std::endl;
+
+    delete p_number5;
+    p_number5 = nullptr;
+
+    // Calling delete twince on a pointer : BAD!
+    p_number5 = new int(99);
+    std::cout << "*p_number5 : " << *p_number5 << std::endl;
+
+    delete p_number5;
+
+    std::cout << "Program is ending well" << std::endl;
     return 0;
 }
