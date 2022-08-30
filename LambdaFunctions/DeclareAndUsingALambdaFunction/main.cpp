@@ -38,5 +38,10 @@ int main()
     };
     func1(10.2, 2.3);
 
+    auto func3 = [](double a, double b) -> int
+    {
+        return a + b;
+    };
+
     return 0;
 }
