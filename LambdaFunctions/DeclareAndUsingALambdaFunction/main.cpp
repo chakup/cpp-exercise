@@ -17,11 +17,13 @@ int main()
     };
     func();
     */
-    /*
-  auto result = [](double a, double b)
-  {
-      return (a + b);
-  }(12.1, 5.7);*/
+
+    auto result = [](double a, double b)
+    {
+        return (a + b);
+    }(12.1, 5.7);
+
+    std::cout << result << std::endl;
 
     // Declare a lambda function and call it directly
     []()
